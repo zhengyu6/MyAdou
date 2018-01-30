@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditProfileItem">
+        <attr name="itemtitle" format="string|reference"></attr>
+        <attr name="itemtype">
+            <enum name="normal" value="101"/>
+            <enum name="avatar" value="102"/>
+        </attr>
+        <attr name="itemvalue" format="string|reference"></attr>
+        <attr name="isendline" format="boolean"></attr>
+        <attr name="iseditable" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="ProfileItem">
+        <attr name="profileitemtitle" format="string|reference"></attr>
+        <attr name="profileitemtype">
+            <enum name="normal" value="101"/>
+            <enum name="avatar" value="102"/>
+        </attr>
+        <attr name="profileitemvalue" format="string|reference"></attr>
+        <attr name="profileisendline" format="boolean"></attr>
+        <attr name="profileiseditable" format="boolean"></attr>
+        <attr name="profilelefticon" format="reference"></attr>
+    </declare-styleable>
+
+</resources>

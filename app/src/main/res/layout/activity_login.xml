@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="80dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@mipmap/acount" />
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:text="xiaominghenshuai"
+            android:lines="1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_margin="5dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="31dp"
+            android:background="@mipmap/pass" />
+
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:text="123456789"
+            android:lines="1"
+            android:phoneNumber="true"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_regist"
+        android:layout_width="182dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/login_background"
+        android:text="登录"
+        android:textColor="@color/login_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="注册新用户"
+        android:textColor="@color/regist_bule" />
+</LinearLayout>

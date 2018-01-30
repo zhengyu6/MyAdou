@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myadou.widet.HeightSensenableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/heightscl"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.tencent.ilivesdk.view.AVRootView
+        android:id="@+id/arv_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transprant"
+        app:navigationIcon="@mipmap/left_arraw" />
+
+    <com.example.myadou.widet.BottomSwitchLayout
+        android:id="@+id/bottomswitchlayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.example.myadou.widet.BottomChatSwitchLayout
+        android:id="@+id/chatswitchlayouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+    <com.example.myadou.widet.LiveMsgListView
+        android:id="@+id/lmlvs"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/chatswitchlayout"
+        />
+
+    <com.example.myadou.widet.danmu.DanmuView
+        android:id="@+id/danmuview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lmlv"
+        />
+    <com.example.myadou.widet.gift.GiftFullScreenView
+        android:id="@+id/gift_full_screen_view"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.myadou.widet.gift.GiftFullScreenView>
+
+    <tyrantgit.widget.HeartLayout
+        android:id="@+id/heartlayout"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        ></tyrantgit.widget.HeartLayout>
+</com.example.myadou.widet.HeightSensenableRelativeLayout>
